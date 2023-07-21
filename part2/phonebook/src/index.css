@@ -1,0 +1,133 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@700&display=swap");
+
+/* end of google fonts */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+
+body {
+  background: rgb(79, 112, 139);
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  padding-top: 2rem;
+  font-size: 1.25rem;
+}
+
+#root {
+  padding: 2rem;
+}
+
+.bigDiv {
+  width: 80%;
+  margin: 0rem auto;
+  background: rgb(229, 228, 236);
+  padding: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 5px solid black;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  margin: 0.5rem 0 0.5rem 2.7rem;
+  text-transform: capitalize;
+}
+
+.containerDiv {
+  width: 80%;
+  margin: 0 auto;
+  background: rgb(79, 112, 139);
+}
+
+.search p,
+.form p {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search input {
+  display: inline-block;
+  margin: 0.8rem 0.8rem 0.8rem 0.1rem;
+  width: 15rem;
+}
+
+.search,
+.form {
+  padding-left: 0.5rem;
+}
+
+.form input {
+  margin: 0.2rem;
+  width: 15rem;
+}
+
+th {
+  background: rgb(79, 112, 139);
+}
+
+.form input[type="number"] {
+  margin-left: 0.7rem;
+}
+
+td {
+  background-color: aliceblue;
+  padding: 0.3rem;
+}
+
+table button {
+  background: rgb(79, 112, 139);
+  color: aliceblue;
+  display: block;
+  margin: 0 auto;
+}
+
+.form {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.form button {
+  display: block;
+  margin: 0.5rem auto;
+  text-transform: capitalize;
+  width: 10rem;
+  padding: 2px;
+  background: black;
+  color: wheat;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20%;
+}
+
+.modal {
+  width: 80%;
+  background: rgb(79, 112, 139);
+  font-size: 1.25rem;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    padding-left: 3.5rem;
+  }
+
+  .form input,
+  .search input {
+    width: 30rem;
+  }
+}
