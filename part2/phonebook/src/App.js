@@ -57,7 +57,6 @@ const App = () => {
     } else {
       // creating new person object
       const personObj = {
-        id: new Date().getTime().toString(),
         name: newName,
         number: number,
       };
@@ -79,6 +78,7 @@ const App = () => {
     personServices
       .update(findPerson.id, { ...findPerson, number })
       .then((response) => {
+        console.log(response);
         setPersons(
           persons.map((person) =>
             person.id === response.id
@@ -92,7 +92,6 @@ const App = () => {
           `Information of ${newName} has already been removed from the sever`
         );
         setShowModal(true);
-
         setPersons(persons.map((person) => person.id !== findPerson.id));
       });
   };
